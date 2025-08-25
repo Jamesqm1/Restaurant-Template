@@ -29,7 +29,7 @@ body {
 }
 
 .topbar-container {
-  @apply w-full bg-primary dark:bg-dark-4 shadow-lg flex justify-center transition-colors z-50;
+  @apply w-full bg-primary dark:bg-dark-4 shadow-lg flex justify-center transition-colors z-101;
 }
 
 .topbar {
@@ -49,7 +49,7 @@ body {
 }
 
 .topbar-links {
-  @apply hidden lg:flex flex-row gap-4;
+  @apply hidden md:flex flex-row gap-4;
   @apply absolute left-1/2 transform -translate-x-1/2;
 }
 
