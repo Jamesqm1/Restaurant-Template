@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -28,7 +28,7 @@ const Contact = () => {
         formState: { errors, isSubmitting },
     } = useForm<ContactForm>({ resolver: zodResolver(contactSchema) })
 
-    const onSubmit = async (data: ContactForm) => {
+    const onSubmit = async () => {
         try {
             await new Promise(r => setTimeout(r, 600))
             setSubmitted("ok")
